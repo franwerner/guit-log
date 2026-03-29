@@ -1,4 +1,4 @@
-package com.guitlog.guitlog.shared;
+package com.guitlog.guitlog.infrastructure;
 
 import org.springframework.context.annotation.Configuration;
 
