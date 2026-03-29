@@ -1,0 +1,23 @@
+package com.guitlog.guitlog.transaction.presentation;
+
+import java.math.BigDecimal;
+import java.time.LocalDate;
+
+import com.guitlog.guitlog.transaction.domain.TransactionType;
+
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+
+@Getter
+@Setter
+@NoArgsConstructor
+public class CreateTransactionRequest {
+    private Long userId;
+    private Long walletId;
+    private Long categoryId;
+    private TransactionType type;
+    private BigDecimal amount;
+    private String description;
+    private LocalDate transactionDate;
+}
