@@ -6,8 +6,8 @@ import org.springframework.stereotype.Component;
 import org.springframework.transaction.annotation.Transactional;
 
 import com.guitlog.guitlog.features.budget.persistence.BudgetJpaRepository;
-import com.guitlog.guitlog.features.budget.persistence.BudgetMapper;
-import com.guitlog.guitlog.features.budget.presentation.BudgetDetailDTO;
+import com.guitlog.guitlog.features.budget.helper.BudgetMapper;
+import com.guitlog.guitlog.features.budget.application.dto.BudgetDetailDTO;
 
 import lombok.RequiredArgsConstructor;
 

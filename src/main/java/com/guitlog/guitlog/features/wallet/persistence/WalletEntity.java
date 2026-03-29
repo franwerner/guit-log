@@ -3,7 +3,7 @@ package com.guitlog.guitlog.features.wallet.persistence;
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
 
-import com.guitlog.guitlog.features.wallet.domain.WalletType;
+import com.guitlog.guitlog.features.wallet.valueObjects.WalletType;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.EnumType;

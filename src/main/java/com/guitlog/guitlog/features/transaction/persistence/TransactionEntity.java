@@ -5,8 +5,8 @@ import java.time.LocalDate;
 import java.time.LocalDateTime;
 
 import com.guitlog.guitlog.features.category.persistence.CategoryEntity;
-import com.guitlog.guitlog.features.transaction.domain.TransactionStatus;
-import com.guitlog.guitlog.features.transaction.domain.TransactionType;
+import com.guitlog.guitlog.features.transaction.valueObjects.TransactionStatus;
+import com.guitlog.guitlog.features.transaction.valueObjects.TransactionType;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.EnumType;

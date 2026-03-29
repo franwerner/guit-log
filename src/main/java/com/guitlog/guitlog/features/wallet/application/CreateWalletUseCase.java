@@ -1,13 +1,9 @@
 package com.guitlog.guitlog.features.wallet.application;
 
-import java.time.LocalDateTime;
-
 import org.springframework.stereotype.Component;
 
 import com.guitlog.guitlog.features.wallet.persistence.WalletEntity;
 import com.guitlog.guitlog.features.wallet.persistence.WalletJpaRepository;
-import com.guitlog.guitlog.features.wallet.persistence.WalletMapper;
-import com.guitlog.guitlog.features.wallet.domain.Wallet;
 
 import lombok.RequiredArgsConstructor;
 
@@ -16,9 +12,8 @@ import lombok.RequiredArgsConstructor;
 public class CreateWalletUseCase {
 
     private final WalletJpaRepository walletJpaRepository;
-    private final WalletMapper walletMapper;
 
-    public WalletEntity execute(Wallet wallet) {
-        return walletJpaRepository.save(walletMapper.toEntity(wallet));
+    public WalletEntity execute(WalletEntity wallet) {
+        return walletJpaRepository.save(wallet);
     }
 }

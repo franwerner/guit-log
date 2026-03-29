@@ -6,8 +6,8 @@ import org.springframework.stereotype.Component;
 import org.springframework.transaction.annotation.Transactional;
 
 import com.guitlog.guitlog.features.transaction.persistence.TransactionJpaRepository;
-import com.guitlog.guitlog.features.transaction.persistence.TransactionMapper;
-import com.guitlog.guitlog.features.transaction.presentation.TransactionDetailDTO;
+import com.guitlog.guitlog.features.transaction.helper.TransactionMapper;
+import com.guitlog.guitlog.features.transaction.application.dto.TransactionDetailDTO;
 
 import lombok.RequiredArgsConstructor;
 

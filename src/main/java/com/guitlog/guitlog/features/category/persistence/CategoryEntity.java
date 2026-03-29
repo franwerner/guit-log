@@ -1,7 +1,7 @@
 package com.guitlog.guitlog.features.category.persistence;
 
 import com.guitlog.guitlog.features.user.persistence.UserEntity;
-import com.guitlog.guitlog.features.category.domain.CategoryType;
+import com.guitlog.guitlog.features.category.valueObjects.CategoryType;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.EnumType;

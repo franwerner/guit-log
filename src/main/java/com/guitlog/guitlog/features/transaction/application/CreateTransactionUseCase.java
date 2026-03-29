@@ -4,8 +4,6 @@ import org.springframework.stereotype.Component;
 
 import com.guitlog.guitlog.features.transaction.persistence.TransactionEntity;
 import com.guitlog.guitlog.features.transaction.persistence.TransactionJpaRepository;
-import com.guitlog.guitlog.features.transaction.persistence.TransactionMapper;
-import com.guitlog.guitlog.features.transaction.domain.Transaction;
 
 import lombok.RequiredArgsConstructor;
 
@@ -14,9 +12,8 @@ import lombok.RequiredArgsConstructor;
 public class CreateTransactionUseCase {
 
     private final TransactionJpaRepository transactionJpaRepository;
-    private final TransactionMapper transactionMapper;
 
-    public TransactionEntity execute(Transaction transaction) {
-            return transactionJpaRepository.save(transactionMapper.toEntity(transaction));
+    public TransactionEntity execute(TransactionEntity transaction) {
+            return transactionJpaRepository.save(transaction);
     }
 }

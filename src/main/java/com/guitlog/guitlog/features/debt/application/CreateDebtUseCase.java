@@ -4,8 +4,6 @@ import org.springframework.stereotype.Component;
 
 import com.guitlog.guitlog.features.debt.persistence.DebtEntity;
 import com.guitlog.guitlog.features.debt.persistence.DebtJpaRepository;
-import com.guitlog.guitlog.features.debt.persistence.DebtMapper;
-import com.guitlog.guitlog.features.debt.domain.Debt;
 
 import lombok.RequiredArgsConstructor;
 
@@ -14,9 +12,8 @@ import lombok.RequiredArgsConstructor;
 public class CreateDebtUseCase {
 
     private final DebtJpaRepository debtJpaRepository;
-    private final DebtMapper debtMapper;
 
-    public DebtEntity execute(Debt debt) {
-        return debtJpaRepository.save(debtMapper.toEntity(debt));
+    public DebtEntity execute(DebtEntity debt) {
+        return debtJpaRepository.save(debt);
     }
 }

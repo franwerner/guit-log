@@ -4,8 +4,8 @@ import org.springframework.stereotype.Component;
 import org.springframework.transaction.annotation.Transactional;
 
 import com.guitlog.guitlog.features.payment.persistence.PaymentJpaRepository;
-import com.guitlog.guitlog.features.payment.persistence.PaymentMapper;
-import com.guitlog.guitlog.features.payment.presentation.PaymentDetailDTO;
+import com.guitlog.guitlog.features.payment.helper.PaymentMapper;
+import com.guitlog.guitlog.features.payment.application.dto.PaymentDetailDTO;
 
 import lombok.RequiredArgsConstructor;
 

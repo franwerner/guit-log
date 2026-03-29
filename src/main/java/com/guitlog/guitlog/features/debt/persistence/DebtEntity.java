@@ -4,7 +4,7 @@ import java.math.BigDecimal;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 
-import com.guitlog.guitlog.features.debt.domain.DebtStatus;
+import com.guitlog.guitlog.features.debt.valueObjects.DebtStatus;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.EnumType;

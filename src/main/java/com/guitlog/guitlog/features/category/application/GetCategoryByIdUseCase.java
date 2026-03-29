@@ -4,8 +4,8 @@ import org.springframework.stereotype.Component;
 import org.springframework.transaction.annotation.Transactional;
 
 import com.guitlog.guitlog.features.category.persistence.CategoryJpaRepository;
-import com.guitlog.guitlog.features.category.persistence.CategoryMapper;
-import com.guitlog.guitlog.features.category.presentation.CategoryDetailDTO;
+import com.guitlog.guitlog.features.category.helper.CategoryMapper;
+import com.guitlog.guitlog.features.category.application.dto.CategoryDetailDTO;
 
 import lombok.RequiredArgsConstructor;
 

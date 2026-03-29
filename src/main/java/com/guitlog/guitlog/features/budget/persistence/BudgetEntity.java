@@ -4,7 +4,7 @@ import java.math.BigDecimal;
 import java.time.LocalDate;
 
 import com.guitlog.guitlog.features.category.persistence.CategoryEntity;
-import com.guitlog.guitlog.features.budget.domain.BudgetPeriod;
+import com.guitlog.guitlog.features.budget.valueObjects.BudgetPeriod;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.EnumType;
